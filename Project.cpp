@@ -414,11 +414,10 @@ void hotel ::hotel_invoice()
         }
 
         default:
-        {
             cout << "Wrong Choice";
         }
-        }
     }
+
     else
         cout << "Invalid City";
 
