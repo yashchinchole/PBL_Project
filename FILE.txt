@@ -1,0 +1,9 @@
+User name:yash
+Departure city: DELHI
+Departure city: MUMBAI
+Mode of transport: Train
+Travel bill:Rs 4675
+Return bill:Rs 2800
+Hotel bill:Rs 6480
+Total bill:Rs 13955
+-----------------------

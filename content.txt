@@ -1,0 +1,6 @@
+Class Object
+Constructor
+Inheritance - multilevel
+File Handling - fstream 
+Exceptional Handling - try catch throw
+Other - goto statement, switch case, nested if else

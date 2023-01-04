@@ -41,11 +41,13 @@ public:
         string mode_arr[3] = {"Airplane", "Train", "Bus"};
         cout << "\n\n\n\t\t\t\t\tINVOICE\n";
         cout << "\tYOUR TRAVEL BILL FROM " << cities_arr[d_city - 1] << " TO " << cities_arr[a_city - 1] << " IS :Rs " << travel_bill;
-        cout << "\n\tYOUR OPTED MODE OF TRANSFORMATION IS : " << mode_arr[mode - 1];
+        cout << "\n\tYOUR OPTED MODE OF TRANSPORTATION IS : " << mode_arr[mode - 1];
         cout << "\n\tYOUR RETURN TRAVEL BILL IS :Rs " << return_travel_bill;
         cout << "\n\tYOUR HOTEL BILL IS :Rs " << hotel_bill;
         cout << "\n\n\tGRAND TOTAL :Rs " << total_bill;
-        f.open("TRIP PLANNER.txt", ios::app | ios::out);
+
+        f.open("FILE.txt", ios::app | ios::out);
+
         f << "User name:" << user << endl
           << "Departure city: " << cities_arr[d_city - 1] << endl
           << "Departure city: " << cities_arr[a_city - 1] << endl
@@ -71,15 +73,16 @@ xyz:
 
     cout << "\nEnter The Choice of city (Arrival) : ";
     cin >> a_city;
+
     try
     {
-
         if (a_city == d_city)
         {
             p = 1;
             throw(p);
         }
     }
+
     catch (int p)
     {
         cout << "\n\t\t !!!exception occured!!!" << endl
@@ -162,7 +165,6 @@ void travel ::mean()
 
 void travel ::travel_invoice()
 {
-
 abc:
     cout << "\n\nAre you a : \n1)Student\n2)Business\n3)Tourist\n";
     cin >> dis_choice;
@@ -414,7 +416,9 @@ void hotel ::hotel_invoice()
         }
 
         default:
+        {
             cout << "Wrong Choice";
+        }
         }
     }
 
@@ -444,9 +448,9 @@ void hotel ::hotel_invoice()
 int main()
 {
     cout << endl
-         << "\t\t........................." << endl
+         << "\t\t-------------------------" << endl
          << "\t\t|  TRIP PLANNER SYSTEM  |" << endl
-         << "\t\t........................." << endl;
+         << "\t\t-------------------------" << endl;
 
     int choice, ch;
     string user;
